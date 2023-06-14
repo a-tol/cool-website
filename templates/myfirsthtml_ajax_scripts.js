@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $('#form').on('submit',function(e){
-    var listresponse =
     $.ajax({
       data: jQuery.param({
         name: $('#spellname').val()
