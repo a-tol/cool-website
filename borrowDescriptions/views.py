@@ -1,8 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import http.client
-import http
-import json
 
 # Create your views here.
 
