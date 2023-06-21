@@ -29,6 +29,8 @@ function updateForecast(){
     });
 }
 
+//NO FUNCTION OVERLOADING?
+//JAVASCRIPT IS GARBAGE, NGL
 function updateForecastParam(period){
     $(document).ready(function(){
         //default values:

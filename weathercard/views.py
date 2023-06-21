@@ -8,4 +8,4 @@ def ajax(request):
     return render(request, "weathercards_ajax.js", content_type="text/javascript")
 
 def index(request):
-    return render(request, "weathercards.html")
+    return render(request, "weathercards.html", content_type="text/html")

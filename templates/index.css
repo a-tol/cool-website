@@ -1,0 +1,19 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+    font-family: "Arial", "Helvetica";
+    font-size:36px;
+}
+
+h2{
+    text-align: center;
+    font-family: "Helvetica";
+    font-size:24px;
+}
+
+div{
+    align-self: center;
+}

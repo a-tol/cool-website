@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from . import views
 
 urlpatterns = [
-	path('admin/', admin.site.urls),
-	path('borrowDescriptions/', include('borrowDescriptions.urls')),
-    path('weathercard/', include('weathercard.urls'))
+    path('', views.index, name="index_redirect"),
+	path('borrowDescriptions/', include('borrowDescriptions.urls'), name="borrowDescriptions/"),
+    path('weathercard/', include('weathercard.urls'), name="weathercard/"),
+    path('index/', include('index.urls'), name="index/")
 ]

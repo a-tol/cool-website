@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata, page css, bootstrap css-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+
+    <body onload = "updateForecastParam(0)">
+        <h1>Welcome to Angelo Tolentino's website...</h1>
+        <a>I build stuff here that I'm interested in building</a>
+        <br><br>
+        <a href ="../borrowDescriptions">A DND 5e spell search using dnd5eapi.co</a>
+        <br>
+        <a href ="../weathercard">A card HTML element that displays the weather</a>
+        <br><br>
+        <a>I probably will do some more stuff later on idk</a>
+        <a>I build these pages without graphic design tools most of the time so it's a little rough</a>
+
+        <div class="card-deck">
+            <!-- DND Spell Finder Card-->
+            <div class="card" id="card1">
+                <h2 id="card1-title">DND Spell Finder</h2>
+                <div class="card-body" id="card1-body">
+                </div>
+                <div class="card-footer">
+                    <a href="../borrowDescriptions">Borrow Descriptions Page</a>
+                </div>
+            </div>
+            <!-- Weather Card -->
+            <div class="card" id="card2">
+                <!-- Input -->
+                <input id="coordField" value = 40.510000,-74.367820 placeholder="lat/long"></input>
+                <!-- Day and Icon -->
+                <span id="period" class="badge badge-primary">Current period</span>
+                <img id="icon" class="card-img-top" alt="Card image cap">
+                <!-- Forecast Contents -->
+                <div class="card-body">
+                    <h5 id="location" class="card-title" id="card-title">(Location goes here.)</h5>
+                    <p id="forecast" class="card-text" id="card-text">(Forecast goes here.)</p>
+                    <!-- Dropdown for Forecast Options-->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="forecastChoicesButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Forecast options
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class = "dropdown-item" onclick="updateForecastParam(0)">Right Now</a>
+                            <a class = "dropdown-item" onclick="updateForecastParam(1)">Later</a>
+                            <a class = "dropdown-item" onclick="updateForecastParam(2)">Tomorrow</a>
+                            <a class = "dropdown-item" onclick="updateForecastParam(3)">Tomorrow, Later</a>
+                        </div>
+                    </div>
+                    <!-- Option for period entry field-->
+                    <!-- How many periods ahead? -->
+                    <!-- <br> -->
+                    <!-- <input id="forecastNumber" type="number" placeholder="Periods ahead" value="0"></input> -->
+                    <!-- <a onclick="updateForecast()" class="btn btn-primary">Retrieve forecast</a> -->
+                </div>
+                <div class="card-footer">
+                    <a href="../weathercard">Weathercard page</a>
+                </div>
+            </div>
+
+            <br><br>
+
+            <!--??? Card-->
+            <div class="card" id="card3>
+                <h2 id="card3-title"></h2>
+                <div class="card-body" id="card2-body">
+                    
+                </div>
+                <div class="card-footer">
+                    <a href="">??? page</a>
+                </div>
+            </div>
+
+            <!-- Resume Card-->
+            <div class="card" id="card4">
+                <h2 id="card4-title">Resume</h4>
+                <div class="card-body" id="card3-body">
+                    
+                </div>
+                <div class="card-footer" style="flex:1">
+                    <a href="">Resume page</a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- ajax lib last -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../weathercard/weathercards_ajax.js"></script>
+
+</html>
