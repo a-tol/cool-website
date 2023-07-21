@@ -1,3 +1,6 @@
 # cool-website
-it's a webapp that searches for spells, takes the first result, pops out the name and the description only.
-i intend to add another webapp in the future that takes the weather and displays it as a card.
+an assortment of stuff in my front-end experiments
+
+borrowDescriptions: uses https://dnd5eapi.co/ to borrow the name and description of a spell given the name (takes in string as search parameter, takes first result)
+
+weathercard: uses https://api.weather.gov/ to get a simple forecast for a set of lat/long for right now, the next evening/morning, the next day, the next evening/mornging after that
